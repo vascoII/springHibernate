@@ -1,4 +1,4 @@
-package springdemo;
+package springbootHibernate.demo.one;
 
 public class TrackCoach implements Coach{
 
