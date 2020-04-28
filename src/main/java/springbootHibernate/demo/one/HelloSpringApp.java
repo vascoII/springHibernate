@@ -1,6 +1,7 @@
 package springbootHibernate.demo.one;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import springbootHibernate.demo.one.bean.Coach;
 
 public class HelloSpringApp {
 

@@ -1,4 +1,4 @@
-package springbootHibernate.demo.one;
+package springbootHibernate.demo.one.bean;
 
 public interface Coach {
 

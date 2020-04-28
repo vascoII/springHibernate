@@ -1,6 +1,6 @@
-package springbootHibernate.demo.one;
+package springbootHibernate.demo.one.bean;
 
-public class BaseballCoach implements Coach{
+public class BaseballCoach implements Coach {
 
     @Override
     public String getDailyWorkout() {

@@ -9,7 +9,7 @@
 
     <!-- Define your beans here -->
     <bean id="myCoach"
-        class="springbootHibernate.demo.one.TrackCoach"
+        class="springbootHibernate.demo.one.bean.TrackCoach"
     >
 
     </bean>
