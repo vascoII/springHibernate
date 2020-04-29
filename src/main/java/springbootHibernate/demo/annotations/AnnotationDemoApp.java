@@ -1,13 +1,8 @@
 package springbootHibernate.demo.annotations;
 
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import springbootHibernate.demo.annotations.bean.Coach;
 
-@EnableAutoConfiguration(exclude={DataSourceAutoConfiguration.class})
-@SpringBootApplication
 public class AnnotationDemoApp {
 
 	public static void main(String[] args) {
