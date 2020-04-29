@@ -7,6 +7,7 @@ import springbootHibernate.demo.annotations.service.FortuneService;
 @Component
 public class BaseballCoach implements Coach {
 
+    @Autowired
     private FortuneService fortuneService;
 
     public BaseballCoach() {
@@ -23,8 +24,10 @@ public class BaseballCoach implements Coach {
         return this.fortuneService.getFortune();
     }
 
+    /*
     @Autowired
     public void setDailyFortune(FortuneService fortuneService) {
         this.fortuneService = fortuneService;
     }
+    */
 }
