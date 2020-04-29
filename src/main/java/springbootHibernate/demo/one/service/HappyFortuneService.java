@@ -2,7 +2,7 @@ package springbootHibernate.demo.one.service;
 
 public class HappyFortuneService implements FortuneService {
 
-    private String[] array = {
+    private String[] arrayFortune = {
             "It is your lucky day",
             "It is not your lucky day",
             "It is your normal average day"
@@ -11,6 +11,6 @@ public class HappyFortuneService implements FortuneService {
     @Override
     public String getFortune() {
 
-        return array[(int)(System.currentTimeMillis() % array.length)];
+        return arrayFortune[(int)(System.currentTimeMillis() % arrayFortune.length)];
     }
 }
