@@ -1,6 +1,7 @@
 package springbootHibernate.demo.annotations.bean;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 import springbootHibernate.demo.annotations.service.FortuneService;
 
@@ -8,7 +9,12 @@ import springbootHibernate.demo.annotations.service.FortuneService;
 public class BaseballCoach implements Coach {
 
     @Autowired
-    private FortuneService fortuneService;
+    @Qualifier("happyFortuneService")
+    private FortuneService happyFortuneService;
+
+    @Autowired
+    @Qualifier("randomFortuneService")
+    private FortuneService randomFortuneService;
 
     public BaseballCoach() {
 
@@ -21,7 +27,7 @@ public class BaseballCoach implements Coach {
 
     @Override
     public String getDailyFortune() {
-        return this.fortuneService.getFortune();
+        return this.happyFortuneService.getFortune() + ", but also " + this.randomFortuneService.getFortune();
     }
 
     /*
