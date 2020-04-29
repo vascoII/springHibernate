@@ -17,7 +17,15 @@ public class TrackCoach implements Coach {
 
     @Override
     public String getDailyFortune() {
-
         return "Just do it: " + fortuneService.getFortune();
+    }
+
+    //Add init method
+    public void initTrackCoach() {
+        System.out.println("TrackCoach: inside initTrackCoach Method");
+    }
+    //Add destroy method
+    public void destroyTrackCoach() {
+        System.out.println("TrackCoach: inside destroyTrackCoach Method");
     }
 }
