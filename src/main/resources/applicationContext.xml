@@ -19,6 +19,9 @@
           class="springbootHibernate.demo.one.bean.CricketCoach">
         <!-- set up setter injection -->
         <property name="fortuneService" ref="myFortuneService"/>
+        <!-- inject literal values -->
+        <property name="emailAddress" value="bingo@gmail.com"/>
+        <property name="team" value="Top Cricket Team"/>
     </bean>
 </beans>
 
